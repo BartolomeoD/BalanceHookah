@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="616" height="346" viewBox="0 0 616 346">
+  <g id="play-button" transform="translate(242 107)">
+    <path id="Path_44" data-name="Path 44" d="M73.839,47.382l-48.4-33A2.2,2.2,0,0,0,22,16.2v66a2.2,2.2,0,0,0,3.439,1.817l48.4-33a2.2,2.2,0,0,0,0-3.634ZM26.4,78.035V20.364L68.695,49.2Z" transform="translate(26.4 16.801)" fill="rgba(255,255,255,0.73)"/>
+    <path id="Path_45" data-name="Path 45" d="M66,0a66,66,0,1,0,66,66A66.075,66.075,0,0,0,66,0Zm0,127.6A61.6,61.6,0,1,1,127.6,66,61.67,61.67,0,0,1,66,127.6Z" fill="rgba(255,255,255,0.73)"/>
+    <g id="Rectangle_7" data-name="Rectangle 7" transform="translate(-242 -107)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0.597">
+      <rect width="616" height="346" rx="20" stroke="none"/>
+      <rect x="0.5" y="0.5" width="615" height="345" rx="19.5" fill="none"/>
+    </g>
+  </g>
+</svg>
