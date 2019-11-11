@@ -583,15 +583,37 @@ h4 {
 
 #slide4 .background .cloud {
   position: absolute;
-  left: -800px;
+  left: -509px;
   top: -831px; }
 
 #slide4 .container {
-  padding-top: 22vh; }
+  padding-top: 27vh; }
 
 #slide4 h2 {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 29px; }
+
+#slide4 .content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 50vh; }
+  #slide4 .content-wrapper .advant {
+    height: 200px;
+    margin: 50px 28px;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500; }
+    #slide4 .content-wrapper .advant .img-wrapper {
+      display: flex;
+      flex-flow: column;
+      align-self: center;
+      justify-content: center;
+      height: 145px; }
+  #slide4 .content-wrapper .bottom {
+    margin-top: 60px; }
 
 /*# sourceMappingURL=style.css.map*/
