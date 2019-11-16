@@ -10,6 +10,7 @@ $grey: #7e7e7e;
 $white-grey: #A2A2A2;
 $white: #ffffff;
 $yellow: #EAB824;
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -83,7 +84,7 @@ h4 {
 
         .name {
             padding-top: 23px;
-            padding-left: 10px;
+            padding-left: 30px;
             font-size: 47px;
             color: $grey;
         }
@@ -230,6 +231,45 @@ h4 {
     }
 }
 
+.form {
+    margin-top: 60px;
+
+    .text {
+        font-size: 30px;
+        color: $yellow;
+    }
+
+    form {
+        margin-top: 55px;
+        display: flex;
+    }
+
+    input {
+        background: transparent;
+        border: 2px solid $yellow;
+        height: 66px;
+        font-size: 30px;
+        width: 423px;
+        padding: 0 20px;
+        color: $yellow;
+        outline: none;
+        border-radius: 20px;
+        margin-right: 40px;
+    }
+
+    button {
+        width: 300px;
+        height: 66px;
+        background: $yellow;
+        color: black;
+        border: none;
+        font-size: 25px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        border-radius: 20px;
+    }
+}
+
 #slide1 {
     .background {
         background: url('../img/1-concrete.png');
@@ -344,9 +384,11 @@ h4 {
         background: url('../img/3-background.png');
         background-size: cover;
     }
+
     .container {
         padding-top: 24vh;
     }
+
     h2 {
         color: $white;
         text-transform: uppercase;
@@ -354,71 +396,47 @@ h4 {
         font-size: 29px;
         line-height: 46px;
     }
+
     .content-wrapper {
         display: flex;
         flex-flow: row nowrap;
         align-items: flex-end;
         justify-content: space-between;
     }
+
     .video-wrapper {
         margin-bottom: 20px;
-    }
-    .form {
-        margin-top: 60px;
-        .text {
-            font-size: 30px;
-            color: $yellow;
-        }
-        form {
-            margin-top: 55px;
-            display: flex;
-        }
-        input {
-            background: transparent;
-            border: 2px solid $yellow;
-            height: 66px;
-            font-size: 30px;
-            width: 423px;
-            padding: 0 20px;
-            color: $yellow;
-            outline: none;
-            border-radius: 20px;
-            margin-right: 40px;
-        }
-        button {
-            width: 300px;
-            height: 66px;
-            background: $yellow;
-            color: black;
-            border: none;
-            font-size: 25px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            border-radius: 20px;
-        }
     }
 }
 
 #slide4 {
-    .background .cloud {
-        position: absolute;
-        left: -509px;
-        top: -831px;
+    .background {
+        background: url('../img/1-concrete.png');
+
+        .cloud {
+            position: absolute;
+            left: -509px;
+            top: -831px;
+        }
     }
+
     .container {
         padding-top: 27vh;
     }
+
     h2 {
         font-weight: bold;
         text-transform: uppercase;
         font-size: 29px;
     }
+
     .content-wrapper {
         display: flex;
         flex-flow: row wrap;
         align-items: flex-start;
         justify-content: space-between;
         height: 50vh;
+
         .advant {
             height: 200px;
             margin: 50px 28px;
@@ -426,6 +444,7 @@ h4 {
             text-align: center;
             font-size: 22px;
             font-weight: 500;
+
             .img-wrapper {
                 display: flex;
                 flex-flow: column;
@@ -437,6 +456,422 @@ h4 {
 
         .bottom {
             margin-top: 60px;
+        }
+    }
+}
+
+#slide5 {
+    .background {
+        background: url('../img/1-concrete.png');
+        background-size: cover;
+
+        img {
+            position: absolute;
+            left: -487px;
+            top: -978px;
+        }
+    }
+
+    .container {
+        padding-top: 10vh;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .left {
+            display: flex;
+            flex-flow: column;
+
+            .comp {
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 150px;
+
+                .text {
+                    font-size: 18px;
+                    text-align: center;
+                }
+
+                .triangle {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    width: 0;
+                    height: 0;
+                    border-left: 7px solid transparent;
+                    border-right: 7px solid transparent;
+
+                    border-top: 11px solid #5F5F5F;
+                }
+
+                img {
+                    text-align: center;
+                }
+            }
+        }
+
+        .right {
+            position: relative;
+
+            .text {
+                position: absolute;
+                font-weight: 500;
+            }
+
+            #text1 {
+                left: 432px;
+                top: 153px;
+                font-size: 18px;
+
+                .triangle {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    width: 0;
+                    height: 0;
+                    border-left: 18px solid transparent;
+                    border-right: 18px solid transparent;
+
+                    border-top: 30px solid #5F5F5F;
+                }
+            }
+
+            #text2 {
+                left: 579px;
+                top: 208px;
+                font-size: 14px;
+                width: 400px;
+
+                .triangle {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    width: 0;
+                    height: 0;
+                    border-left: 7px solid transparent;
+                    border-right: 7px solid transparent;
+
+                    border-top: 11px solid #5F5F5F;
+                }
+            }
+
+            #text3 {
+                left: 179px;
+                top: 672px;
+                text-align: right;
+                font-size: 23px;
+
+                .triangle {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    width: 0;
+                    height: 0;
+                    border-left: 18px solid transparent;
+                    border-right: 18px solid transparent;
+
+                    border-bottom: 30px solid #5F5F5F;
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+}
+
+#slide6 {
+    .background {
+        background: url('../img/6-background.png');
+        background-size: cover;
+    }
+
+    .container {
+        padding-top: 25vh;
+
+        .slide-number-wrapper {
+            .number {
+                color: #A8A8A8;
+            }
+
+            .name {
+                color: #E0E0E0;
+            }
+        }
+
+        .mid {
+            color: white;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            margin-top: 30px;
+
+            .big {
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: flex-end;
+            }
+
+            .numb {
+                font-size: 86px;
+                color: $yellow;
+            }
+
+            .medium {
+                font-size: 24px;
+                margin-bottom: 18px;
+                margin-right: 10px;
+            }
+
+            .text1 {
+                font-size: 48px;
+                color: $yellow;
+            }
+
+            .small {
+                font-size: 24px;
+                text-align: center;
+            }
+
+            .text2 {
+                font-size: 24px;
+                color: $yellow;
+            }
+
+            #plus1 {
+                margin-left: 50px;
+            }
+
+            .text-wrapper {
+                margin-bottom: 18px;
+                margin-left: 22px;
+            }
+
+            .percent {
+                align-self: flex-start;
+            }
+        }
+    }
+
+    .form {
+        .text {
+            color: white;
+        }
+
+        button {
+            color: #667381;
+        }
+    }
+}
+
+#slide7 {
+
+    .background {
+        background: url('../img/1-concrete.png');
+        background-size: cover;
+    }
+
+    .container {
+        padding-top: 22vh;
+    }
+
+    .text1 {
+        font-size: 48px;
+        color: $yellow;
+    }
+
+    .header {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-start;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .text-wrapper {
+        margin-bottom: 18px;
+        margin-left: 22px;
+    }
+
+    .text1 {
+        font-size: 38px;
+        color: $yellow;
+    }
+
+    .numb {
+        font-size: 75px;
+        color: $yellow;
+    }
+
+    .text2 {
+        font-size: 24px;
+        color: $yellow;
+    }
+
+    .costs {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        margin-right: -80px;
+        margin-top: 30px;
+
+        .cost {
+            position: relative;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+
+            .paragraph {
+                text-align: center;
+                font-size: 26px;
+                color: white;
+            }
+        }
+
+        img {
+            position: absolute;
+            z-index: -1;
+        }
+
+        .center {
+            width: 433px;
+            height: 446px;
+            padding-top: 70px;
+
+            img {
+                position: absolute;
+                top: -152px;
+                left: -120px;
+            }
+        }
+
+        .left,
+        .right {
+            width: 380px;
+            height: 390px;
+            margin-top: 30px;
+            padding-top: 50px;
+
+            img {
+                left: -122px;
+                top: -58px;
+            }
+        }
+    }
+}
+
+#slide8 {
+    .background {
+        background: url('../img/3-background.png');
+        background-size: cover;
+    }
+
+    .container {
+        padding-top: 25vh;
+    }
+    .form {
+        margin-top: 30px;
+    }
+    .steps {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin-left: 200px;
+        align-items: center;
+
+        .step {
+            color: white;
+            font-size: 22px;
+            font-weight: 500;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .triangle {
+            width: 0;
+            height: 0;
+            border-top: 7px solid transparent;
+            border-bottom: 7px solid transparent;
+
+            border-left: 10px solid white;
+            margin: 0 28px;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+#slide9 {
+    .background {
+        background: url('../img/1-concrete.png');
+        background-size: cover;
+
+        img {
+            position: absolute;
+            top: -900px;
+            left: -400px;
+        }
+    }
+
+    .container {
+        padding-top: 25vh;
+    }
+
+    .form {
+        .text {
+            color: $black;
+        }
+
+        input {
+            border-color: $black;
+            color: $black;
+        }
+
+        button {
+            color: white;
+            background-color: $black;
+            font-weight: 700;
+            width: 221px;
+        }
+    }
+
+    .footer {
+        margin-top: 13vh;
+        font-size: 20px;
+        color: $grey;
+        a {
+            color: $grey;
+        }
+
+        .top {
+            display: flex;
+            flex-flow: row nowrap;
+            .left {
+                display: flex;
+                flex-flow: column;
+                a {
+                    white-space: nowrap;
+                }
+            }
+            .center {
+                margin: 0 50px;
+            }
+            .right {
+                text-align: right;
+                white-space: nowrap;
+                display: flex;
+                flex-flow: column;
+                align-items: flex-end;
+                .social {
+                    display: flex;
+                    flex-flow: row;
+                    align-items: center;
+                    a {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .bottom {
+            text-align: center;
+            color: #B2B2B2;
         }
     }
 }
