@@ -1,6 +1,7 @@
 import FullPage from 'fullpage.js';
-
+var Inputmask = require('inputmask');
 var $ = require("jquery");
+import MicroModal from 'micromodal';
 
 $(document).ready(function (e) {
     $('#slide1 .anchor').click(function (e) {
@@ -23,6 +24,23 @@ $(document).ready(function (e) {
             $('.left-layout').addClass(layoutColor);
         }
     });
+
+    $("#slide1 .button").click(function (e) {
+        MicroModal.show('modal-form');
+    })
+
+    $("form").on("submit", function (e) {
+        e.preventDefault();
+        console.log("sended");
+        MicroModal.close('modal-form');
+        MicroModal.show('modal-success');
+    })
+
+    var selector = document.getElementsByClassName("input-text");
+
+    var im = new Inputmask("+7 (999) 999-99-99");
+    im.mask(selector);
+
 
     $('#slide1 #next').click(function () {
         $.fn.fullpage.moveSectionDown();

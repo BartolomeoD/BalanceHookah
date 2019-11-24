@@ -19,11 +19,11 @@
                     <img src="dist/img/logo.svg" alt="Hookah Balance">
                 </div>
                 <div class="menu">
-                    <a href="">Видео о товаре</a>
-                    <a href="">Польза для вас</a>
-                    <a href="">Цена</a>
-                    <a href="">Схема работы</a>
-                    <a href="">экономия в цифрах</a>
+                    <span class="to-slide" data-slide="3rdPage">Видео о товаре</span>
+                    <span class="to-slide" data-slide="4thPage">Польза для вас</span>
+                    <span class="to-slide" data-slide="7thPage">Цена</span>
+                    <span class="to-slide" data-slide="5thPage">Схема работы</span>
+                    <span class="to-slide" data-slide="6thPage">экономия в цифрах</span>
                 </div>
                 <div class="key">
                     <img src="dist/img/key.svg" alt="">
@@ -85,6 +85,10 @@
                         <h1>Hookah Balance</h1>
                         <p>Автоматизированный <br>учет табака в кальянных</p>
                     </div>
+                    <div class="phone-wrapper">
+                        <div class="button">Обратный звонок</div>
+                        <a class="phone" href="tel:89260333387">+7 926 033 33 87</a>
+                    </div>
                 </div>
                 <div>
                     <img src="dist/img/1-device.png" alt="vape bar" class="device">
@@ -123,7 +127,7 @@
                             Какие табаки пользуются спросом
                         </div>
                         <div class="li">
-                            Автоматически сформированный закупочный лист
+                            Автоматически сформированный<br> закупочный лист
                         </div>
                     </div>
                 </div>
@@ -155,7 +159,7 @@
                         </div>
                     </div>
                     <div class="video-wrapper">
-                        <a href="">
+                        <a target="_blank" href="https://youtu.be/KM8vZmAl9kc">
                             <img src="dist/img/video.svg" alt="videos xxx">
                         </a>
                     </div>
@@ -166,7 +170,7 @@
                         вопросам и вышлет презентацию.
                     </div>
                     <form action="">
-                        <input type="text">
+                        <input class="input-text" placeholder="+7 (___) ___-__-__" type="text">
                         <button>Отправить заявку</button>
                     </form>
                 </div>
@@ -365,7 +369,7 @@
                         вопросам и вышлет презентацию.
                     </div>
                     <form action="">
-                        <input type="text">
+                        <input class="input-text" placeholder="+7 (___) ___-__-__" type="text">
                         <button>Отправить заявку</button>
                     </form>
                 </div>
@@ -494,7 +498,7 @@
                         вопросам и вышлет презентацию.
                     </div>
                     <form action="">
-                        <input type="text">
+                        <input class="input-text" placeholder="+7 (___) ___-__-__" type="text">
                         <button>Отправить заявку</button>
                     </form>
                 </div>
@@ -523,31 +527,28 @@
                             Вам перезвонит и ответит на все Ваши вопросы.
                         </div>
                         <form action="">
-                            <input type="text">
+                            <input class="input-text" placeholder="+7 (___) ___-__-__" type="text">
                             <button>Отправить</button>
                         </form>
                     </div>
                     <div class="footer">
                         <div class="top">
                             <div class="left">
-                                <a href="">Политика конфиденциальности</a>
-                                <a href="">Пользовательское соглашение</a>
-                                <a href="">Согласие на обработку личных данных</a>
-                                <a href="">Договор оферты</a>
+                                <a target="_blank" href="doc.pdf">Согласие на обработку личных данных</a>
                             </div>
                             <div class="center">
-                                ИНН 123456789
-                                ОГРН 123456789
+                                ИНН 123456789 <br>
+                                ОГРН 123456789<br>
                                 info@hookahbalance.ru
                             </div>
                             <div class="right">
-                                График работы: Ежедневно с 10:00 до 22:00<br>
-                                +7 926 033 33 87
+                                График работы:<br> Ежедневно с 10:00 до 22:00<br>
+                                <a class="phone" href="tel:89260333387">+7 926 033 33 87</a>
                                 <div class="social">
-                                    <a href="https://vk.com">
+                                    <a target="_blank" href="https://vk.com/hookahbalance">
                                         <img src="dist/img/vk.png" alt="">
                                     </a>
-                                    <a href="https://instagram.com">
+                                    <a target="_blank" href="https://www.instagram.com/hookahbalance">
                                         <img src="dist/img/inst.png" alt="">
                                     </a>
                                 </div>
@@ -558,6 +559,40 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal micromodal-slide" id="modal-success" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                <header class="modal__header">
+                    <div></div><button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                </header>
+                <main class="modal__content" id="modal-1-content">
+                    <p>Спасибо, заявка принята!<br>
+                        Менеджер свяжется с Вами в ближайшее время
+                    </p>
+                </main>
+            </div>
+        </div>
+    </div>
+    <div class="modal micromodal-slide" id="modal-form" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                <header class="modal__header">
+                    <div></div><button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                </header>
+                <main class="modal__content" id="modal-1-content">
+                    <div class="form">
+                        <div class="text">
+                            Наш специалист перезвонит вам в ближайшее время и ответит на все Ваши вопросы
+                        </div>
+                        <form action="">
+                            <input class="input-text" placeholder="+7 (___) ___-__- __" type="text">
+                            <button>Перезвонить</button>
+                        </form>
+                    </div>
+                </main>
             </div>
         </div>
     </div>
