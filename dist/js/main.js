@@ -18010,6 +18010,10 @@ $(document).ready(function (e) {
         _micromodal2.default.show('modal-form');
     });
 
+    $(".logo").click(function (e) {
+        $.fn.fullpage.moveTo('firstPage');
+    });
+
     $("form").on("submit", function (e) {
         e.preventDefault();
         console.log("sended");

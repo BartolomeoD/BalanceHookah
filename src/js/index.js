@@ -29,6 +29,10 @@ $(document).ready(function (e) {
         MicroModal.show('modal-form');
     })
 
+    $(".logo").click(function(e) {
+        $.fn.fullpage.moveTo('firstPage');
+    })
+
     $("form").on("submit", function (e) {
         e.preventDefault();
         console.log("sended");

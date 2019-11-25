@@ -678,6 +678,9 @@ h4 {
     position: absolute;
     top: -49vh; }
 
+#slide1 .logo {
+  cursor: pointer; }
+
 #slide1 .container {
   display: flex;
   flex-flow: row nowrap;
@@ -804,6 +807,9 @@ h4 {
 
 #slide3 .video-wrapper {
   margin-bottom: 20px; }
+  #slide3 .video-wrapper iframe {
+    width: 560px;
+    height: 315px; }
 
 #slide4 .background {
   background: url("../img/1-concrete.png"); }
@@ -1323,14 +1329,15 @@ h4 {
     font-size: 12px; }
     .top-layout .top-menu .menu {
       width: 100%;
+      display: none;
       flex-flow: column; }
     .top-layout .top-menu .logo img {
       width: 80px; }
-  .left-layout .left {
-    width: 64px;
-    height: 83vh; }
   .left-layout .container {
     top: 16vh; }
+    .left-layout .container .left {
+      width: 64px;
+      height: 83vh; }
   .section .container {
     padding-top: 16vh;
     padding-left: 55px; }
@@ -1350,6 +1357,17 @@ h4 {
   #slide1 .left p {
     font-size: 14px;
     line-height: 20px; }
+  #slide1 .left .button {
+    width: 197px;
+    height: 44px;
+    font-size: 15px;
+    line-height: 44px;
+    margin-top: 15px;
+    margin-bottom: 5px; }
+  #slide1 .left .phone {
+    font-size: 20px; }
+  #slide1 .left .phone-wrapper {
+    width: 100%; }
   #slide2 .container {
     flex-flow: column nowrap; }
   #slide2 h2 {
@@ -1367,12 +1385,17 @@ h4 {
   #slide3 .content-wrapper {
     flex-flow: column; }
   #slide3 h2 {
-    font-size: 12px;
+    font-size: 11px;
     line-height: 12px; }
   #slide3 .container {
     padding-top: 15vh; }
-  #slide3 .video-wrapper img {
-    max-width: 100%; }
+  #slide3 .video-wrapper {
+    align-self: center; }
+    #slide3 .video-wrapper iframe {
+      width: 210px;
+      height: 118px; }
+    #slide3 .video-wrapper img {
+      max-width: 100%; }
   #slide4 .container {
     padding-top: 14vh; }
   #slide4 h2 {
