@@ -18017,7 +18017,6 @@ $(document).ready(function (e) {
     $("form").on("submit", function (e) {
         e.preventDefault();
         console.log("sended");
-        _micromodal2.default.close('modal-form');
         _micromodal2.default.show('modal-success');
     });
 

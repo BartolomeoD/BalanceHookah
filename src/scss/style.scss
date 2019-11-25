@@ -85,6 +85,11 @@ ul {
             margin-bottom: 20px;
         }
 
+        input::placeholder {
+            color: $black;
+            opacity: 1;
+        }
+
         button {
             color: white;
             background-color: $black;
@@ -1726,7 +1731,7 @@ h4 {
             padding-top: 15vh;
 
             .content-wrapper {
-                height: 84vh;
+                height: 82vh;
                 display: flex;
                 flex-flow: column nowrap;
                 justify-content: flex-start;

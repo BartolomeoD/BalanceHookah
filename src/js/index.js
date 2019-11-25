@@ -36,7 +36,6 @@ $(document).ready(function (e) {
     $("form").on("submit", function (e) {
         e.preventDefault();
         console.log("sended");
-        MicroModal.close('modal-form');
         MicroModal.show('modal-success');
     })
 

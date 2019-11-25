@@ -491,6 +491,9 @@ ul {
     color: #33465b;
     margin-right: 0;
     margin-bottom: 20px; }
+  #modal-form .form input::placeholder {
+    color: #33465b;
+    opacity: 1; }
   #modal-form .form button {
     color: white;
     background-color: #33465b;
@@ -1509,7 +1512,7 @@ h4 {
   #slide9 .container {
     padding-top: 15vh; }
     #slide9 .container .content-wrapper {
-      height: 84vh;
+      height: 82vh;
       display: flex;
       flex-flow: column nowrap;
       justify-content: flex-start; }
